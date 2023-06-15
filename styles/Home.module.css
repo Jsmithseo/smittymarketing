@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .title a {
@@ -41,13 +42,16 @@
 
 .grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
+  
 }
+
+.links  li{
+  display: inline-block!important;
+  margin:  20px;
+  padding: 30px;
+
+}
+
 
 .card {
   margin: 1rem;
@@ -84,7 +88,7 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .links {
     width: 100%;
     flex-direction: column;
   }
